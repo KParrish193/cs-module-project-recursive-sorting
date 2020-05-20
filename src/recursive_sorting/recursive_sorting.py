@@ -86,9 +86,9 @@ def merge_sort_in_place(arr, l, r):
         merge_sort_in_place(arr, l, mid)
         merge_sort_in_place(arr, mid + 1, r)
 
-        sorted_arr = merge_in_place(arr, l, mid, r)
+        merge_in_place(arr, l, mid, r)
 
-        return sorted_arr
+    return arr
 
 # STRETCH: implement the Timsort function below
 # hint: check out https://github.com/python/cpython/blob/master/Objects/listsort.txt
